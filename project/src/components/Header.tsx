@@ -1,4 +1,5 @@
-import { Crosshair, Plus } from 'lucide-react';
+import { Plus } from 'lucide-react';
+import logoImage from '../assist/Gemini_Generated_Image_sp3ybdsp3ybdsp3y.jpg';
 
 interface HeaderProps {
   onShareClick: () => void;
@@ -12,9 +13,11 @@ export function Header({ onShareClick }: HeaderProps) {
           <div className="flex items-center gap-3">
             <div className="relative">
               <div className="absolute inset-0 bg-amber-500/20 blur-lg rounded-lg" />
-              <div className="relative w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/20">
-                <Crosshair className="w-5 h-5 text-black" strokeWidth={2.5} />
-              </div>
+              <img
+                src={logoImage}
+                alt="PUBG Mobile Sensitivity & Tactics logo"
+                className="relative w-10 h-10 rounded-lg object-cover object-left shadow-lg shadow-amber-500/20"
+              />
             </div>
             <div>
               <h1 className="text-lg font-bold tracking-tight leading-none">
